@@ -21,7 +21,12 @@ declare module "styled-components" {
       primary: string;
       secondary: string;
     };
-    gradients: {};
+    gradients: {
+      headingLight: string;
+      headingDark: string;
+      secondaryDark: string;
+      secondaryLight: string;
+    };
     shadows: {
       close: string;
       spread: string;
@@ -49,7 +54,12 @@ const theme: DefaultTheme = {
     primary: "Arial, Helvetica, sans-serif",
     secondary: "'Times New Roman', Times, serif",
   },
-  gradients: {},
+  gradients: {
+    headingLight: "linear-gradient(to right, #abbaab, #ffffff)",
+    headingDark: "linear-gradient(to right, #c31432, #240b36)",
+    secondaryDark: "linear-gradient(to right, #0f2027, #203a43, #2c5364)",
+    secondaryLight: "linear-gradient(to right, #ffefba, #ffffff)",
+  },
   shadows: {
     close: "0 0 5px 0 rgba(0, 0, 0, 0.25)",
     spread: " 0 0 20px 0 rgba(0, 0, 0, 0.15)",
