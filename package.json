@@ -1,0 +1,37 @@
+{
+  "name": "catexams",
+  "version": "1.0.0",
+  "description": "Official website for catexams.lk",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madushan-sooriyarathne/cat-exams.git"
+  },
+  "author": "Madushan Sooriyarathne <hello@madushan.dev>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madushan-sooriyarathne/cat-exams/issues"
+  },
+  "homepage": "https://github.com/madushan-sooriyarathne/cat-exams#readme",
+  "dependencies": {
+    "framer-motion": "^4.1.17",
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.3",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@types/styled-components": "^5.1.11",
+    "babel-plugin-styled-components": "^1.13.2",
+    "typescript": "^4.3.5"
+  }
+}
