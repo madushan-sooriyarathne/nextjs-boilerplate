@@ -4,7 +4,7 @@ import { Heading } from "./styles";
 interface Props {
   children: ReactNode;
   light?: boolean;
-  alignment?: AlignmentType;
+  alignment?: Alignment;
 }
 
 const SecondaryHeading: React.FC<Props> = ({

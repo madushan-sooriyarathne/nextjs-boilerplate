@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 interface HeadingProps {
-  alignment: AlignmentType;
+  alignment: Alignment;
   light: boolean;
+  large: boolean;
 }
 
-const Heading = styled.h1<HeadingProps>`
-  font-size: 5rem;
+const HeadingLarge = styled.h1<HeadingProps>`
+  font-size: ${(props) => (props.large ? "5rem" : "3rem")};
   font-weight: 900;
-  font-family: ${(props) => props.theme.fonts.secondary};
-  letter-spacing: 1px;
+  font-family: ${(props) => props.theme.fonts.primary};
   text-align: ${(props) => props.alignment};
   color: ${(props) =>
     props.light ? props.theme.colors.white : props.theme.colors.primary};
@@ -26,4 +26,4 @@ const Heading = styled.h1<HeadingProps>`
 */
 `;
 
-export { Heading };
+export { HeadingLarge };

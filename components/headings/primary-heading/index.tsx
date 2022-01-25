@@ -1,21 +1,23 @@
 import { ReactNode } from "react";
-import { Heading } from "./styles";
+import { HeadingLarge } from "./styles";
 
 interface Props {
   children: ReactNode;
   light?: boolean;
-  alignment?: AlignmentType;
+  alignment?: Alignment;
+  large?: boolean;
 }
 
 const PrimaryHeading: React.FC<Props> = ({
   children,
-  light = false,
   alignment = "center",
+  light = false,
+  large = false,
 }: Props): JSX.Element => {
   return (
-    <Heading alignment={alignment} light={light}>
+    <HeadingLarge alignment={alignment} light={light} large={large}>
       {children}
-    </Heading>
+    </HeadingLarge>
   );
 };
 
