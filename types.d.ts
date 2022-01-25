@@ -1,5 +1,5 @@
 declare global {
-  type AlignmentType = "center" | "left" | "right" | "justify";
+  type Alignment = "center" | "left" | "right" | "justify";
 }
 
 export {};
