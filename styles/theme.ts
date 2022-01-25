@@ -5,21 +5,22 @@ declare module "styled-components" {
   export interface DefaultTheme {
     colors: {
       primary: string;
-      // primaryMedium: string;
-      // primaryLight: string;
-      secondary: string;
-      // secondaryMedium: string;
+      primaryDark: string;
+      primaryLight: string;
+      // secondary: string;
+      // secondaryDark: string;
       // secondaryLight: string;
       white: string;
       black: string;
-      // blackLight: string;
+      blackLight: string;
+      blackDark: string;
       // danger: string;
       // warning: string;
       // success: string;
     };
     fonts: {
       primary: string;
-      secondary: string;
+      // secondary: string;
     };
     gradients: {
       headingLight: string;
@@ -37,22 +38,21 @@ declare module "styled-components" {
 
 const theme: DefaultTheme = {
   colors: {
-    primary: "red",
-    // primaryMedium: string,
-    // primaryLight: string,
-    secondary: "yellow",
-    // secondaryMedium: string,
-    // secondaryLight: string,
-    white: "white",
-    black: "black",
-    // blackLight: string,
+    primary: "#f7981d",
+    primaryDark: "#7c4c0f",
+    primaryLight: "#fbcc8e",
+    black: "#2c3327",
+    blackDark: "#161a14",
+    blackLight: "#80857d",
+    white: "#fafafa",
+
     // danger: string,
     // warning: string,
     // success: string,
   },
   fonts: {
-    primary: "Arial, Helvetica, sans-serif",
-    secondary: "'Times New Roman', Times, serif",
+    primary:
+      "'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
   },
   gradients: {
     headingLight: "linear-gradient(to right, #abbaab, #ffffff)",
