@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/madushan-sooriyarathne/nextjs-boilerplate#readme",
   "dependencies": {
+    "@lottiefiles/lottie-player": "^1.5.4",
     "framer-motion": "^6.2.1",
     "next": "^12.0.8",
     "react": "^17.0.2",
